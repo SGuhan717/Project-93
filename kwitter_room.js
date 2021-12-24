@@ -15,12 +15,12 @@ const firebaseConfig = {
       document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";
 
       function addroom() {
-             room_name = document.getElementById("room_name").value;
+             room_name = document.getElementById("Roomname").value;
 
              firebase.database().ref("/").child(room_name).update({
                   purpose: "Adding Room Name"
             });
-    
+            
             localStorage.setItem("Roomname",room_name);
         
             window.location = "kwitter_page.html";
