@@ -4,5 +4,4 @@ function adduser() {
     localStorage.setItem("Username",user_name);
 
     window.location = "kwitter_room.html";
-  
 }

@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-      apiKey: "AIzaSyAEKYcTMOSOAkfkYDF4Y_6LuYKTv1tjD7k",
-  authDomain: "project-93-32f1d.firebaseapp.com",
-  databaseURL: "https://project-93-32f1d-default-rtdb.firebaseio.com",
-  projectId: "project-93-32f1d",
-  storageBucket: "project-93-32f1d.appspot.com",
-  messagingSenderId: "1088653578706",
-  appId: "1:1088653578706:web:e2fb3f0e153d977cd8f80b"
-};
+      apiKey: "AIzaSyBxH7SArOQJipUVqRg43Jv08UsNUGIWZgY",
+      authDomain: "project---96.firebaseapp.com",
+      projectId: "project---96",
+      storageBucket: "project---96.appspot.com",
+      messagingSenderId: "803724124824",
+      appId: "1:803724124824:web:05cc33c9f95c0f023c66ed"
+    };
+    
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
@@ -15,12 +15,12 @@ const firebaseConfig = {
       document.getElementById("welcome_user_name").innerHTML = "Welcome "+user_name+"!";
 
       function addroom() {
-             room_name = document.getElementById("Roomname").value;
+             room_name = document.getElementById("room_name").value;
 
              firebase.database().ref("/").child(room_name).update({
                   purpose: "Adding Room Name"
             });
-            
+    
             localStorage.setItem("Roomname",room_name);
         
             window.location = "kwitter_page.html";
